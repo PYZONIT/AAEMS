@@ -124,6 +124,13 @@
   .link-arrow:hover .i { transform: translateX(5px) rotate(-45deg); }
 }
 
+@media (pointer: coarse) {
+  .link-arrow { min-height: 2.75rem; padding-block: 0.6rem; }
+  .filters button { min-height: 2.75rem; }
+  .footer-col a, .footer-contact a { display: inline-block; padding-block: 0.3rem; }
+  .hero__dots button { height: 2.75rem; }
+}
+
 .text-link {
   background: linear-gradient(currentColor, currentColor) left 100% / 100% 1px no-repeat;
   transition: color 0.3s;

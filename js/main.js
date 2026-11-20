@@ -629,7 +629,7 @@
 
     const mm = gsap.matchMedia();
 
-    mm.add('(min-width: 900px)', () => {
+    mm.add('(min-width: 900px) and (min-height: 600px)', () => {
       const ARCH = 'inset(15vh 6vw 10vh 62vw round 16vw 16vw 0vw 0vw)';
       const FULL = 'inset(0vh 0vw 0vh 0vw round 0vw 0vw 0vw 0vw)';
       const tl = gsap.timeline({
@@ -655,7 +655,7 @@
         .to({}, { duration: 0.08 });
     });
 
-    mm.add('(max-width: 899px)', () => {
+    mm.add('(max-width: 899px), (max-height: 599px)', () => {
       gsap.fromTo(media, { yPercent: -4 }, {
         yPercent: 4,
         ease: 'none',
@@ -665,7 +665,7 @@
         opacity: 1,
         stagger: 0.1,
         ease: 'none',
-        scrollTrigger: { trigger: motto, start: 'top 80%', end: 'center 45%', scrub: true },
+        scrollTrigger: { trigger: motto, start: 'top 92%', end: 'top 38%', scrub: true },
       });
     });
   }
