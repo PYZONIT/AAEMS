@@ -877,7 +877,7 @@ ol.thread::after {
 }
 
 /* ---- Values ----------------------------------------------------------- */
-.values { overflow: hidden; }
+.values { overflow: clip; }
 .values__ornament {
   position: absolute;
   top: clamp(-10rem, -8vw, -4rem);

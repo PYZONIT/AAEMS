@@ -15,6 +15,7 @@ html {
   text-size-adjust: 100%;
   scroll-behavior: smooth;
   scroll-padding-top: var(--header-h-compact);
+  overflow-x: clip;
 }
 /* Lenis drives smooth scrolling when motion is on */
 html.lenis,
@@ -154,7 +155,8 @@ a.ast-link { text-decoration: none; }
   margin-inline: auto;
 }
 
-.section { padding-block: var(--section-y); position: relative; }
+/* Sections clip sideways so elements waiting to animate in can never widen the page */
+.section { padding-block: var(--section-y); position: relative; overflow-x: clip; }
 
 .grid-12 {
   display: grid;
